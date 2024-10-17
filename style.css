@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: rgba(0, 0, 0, 0.771);
+}
+.container {
+  height: 10px;
+}
+.tables {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 100px;
+}
+table {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+.inputs {
+  margin-top: 100px;
+}
+tr,
+td {
+  text-align: center;
+  border: 1px solid white;
+  color: white;
+  font-size: 14px;
+}
+h1 {
+  color: white;
+}
+.selectElements {
+  display: flex;
+  margin-top: 10px;
+  gap: 10px;
+}
+.success {
+  margin: 3px 0px;
+  /* padding: 5px 5px; */
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(58, 58, 231);
+  color: white;
+  width: 100px;
+}
+.danger {
+  /* padding: 5px 5px; */
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(230, 34, 34);
+  color: white;
+  width: 100px;
+}
+#res {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 1199px) {
+  tr,
+  td {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 991px) {
+  tr,
+  td {
+    font-size: 9px;
+  }
+  .success,
+  .danger {
+    width: 50px;
+    font-size: 8px;
+  }
+}
+@media (max-width: 767px) {
+  .success,
+  .danger {
+    width: 42px;
+  }
+  tr,
+  td {
+    font-size: 7px;
+  }
+}
+@media (max-width: 576px) {
+  .success,
+  .danger {
+    width: 40px;
+  }
+  tr,
+  td {
+    font-size: 5px;
+  }
+}
+@media (max-width: 495px) {
+  .selectElements {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .success,
+  .danger {
+    width: 40px;
+  }
+  tr,
+  td {
+    font-size: 3px;
+  }
+}
